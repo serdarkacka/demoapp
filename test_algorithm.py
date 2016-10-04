@@ -8,7 +8,7 @@ class ConcatTest(unittest.TestCase):
 	def test_ConcatSublist(self):
 		self.assertEqual(concat(['a','b','c', 'a'], 1, 2), 'bc')
 
-	def test_ConcatFromIndexGreaterThanToIndex(self):
+	def test_ConcatStartIndexGreaterThanEndIndex(self):
 		self.assertEqual(concat(['a','b','c'], 1, 0), '')
 
 	def test_ConcatOutOfBoundIndex(self):
